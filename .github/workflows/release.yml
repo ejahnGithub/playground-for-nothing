@@ -1,11 +1,9 @@
 name: 'release'
-
-on: 
+on:
   release:
     types: [created]
 - uses: actions/package-action@v0.0.1-alpha.1
   with:
-  
     # Personal access token (PAT) or GITHUB_TOKEN with write:package scope used to upload the package to GHCR. The GITHUB_TOKEN is taken by default.
     #
     # We recommend using a service account with the least permissions necessary. Also
@@ -23,5 +21,3 @@ on:
     # This defaults to the entire action repository contents if not explicitly defined.
     # Default: '.'
     path: 'src/ action.yml dist/'
-
-    
