@@ -1,7 +1,8 @@
 name: 'release'
 
 on: 
-  release: 
+  release:
+    types: [created]
 
 - uses: actions/package-action@v0.0.1-alpha.1
   with:
